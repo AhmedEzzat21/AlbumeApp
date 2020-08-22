@@ -41,6 +41,11 @@
 		A3CB77B824F1E03700B0B338 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77B724F1E03700B0B338 /* UserModel.swift */; };
 		A3CB77BA24F1E04900B0B338 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77B924F1E04900B0B338 /* AlbumModel.swift */; };
 		A3CB77BC24F1E05700B0B338 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77BB24F1E05700B0B338 /* PhotosModel.swift */; };
+		A3CB77BF24F1E37100B0B338 /* UserProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77BE24F1E37100B0B338 /* UserProcessor.swift */; };
+		A3CB77C124F1E37E00B0B338 /* AlbumeProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C024F1E37E00B0B338 /* AlbumeProcessor.swift */; };
+		A3CB77C324F1E39700B0B338 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C224F1E39700B0B338 /* UserPresenter.swift */; };
+		A3CB77C524F1E3B800B0B338 /* PhotosProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */; };
+		A3CB77C724F1E3CC00B0B338 /* PhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */; };
 		B00927B37DEE9B4C745EEEAC /* Pods_AlbumApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E94AB0881BAC5B724F69D5 /* Pods_AlbumApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +88,11 @@
 		A3CB77B724F1E03700B0B338 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		A3CB77B924F1E04900B0B338 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		A3CB77BB24F1E05700B0B338 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		A3CB77BE24F1E37100B0B338 /* UserProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProcessor.swift; sourceTree = "<group>"; };
+		A3CB77C024F1E37E00B0B338 /* AlbumeProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumeProcessor.swift; sourceTree = "<group>"; };
+		A3CB77C224F1E39700B0B338 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosProcessor.swift; sourceTree = "<group>"; };
+		A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPresenter.swift; sourceTree = "<group>"; };
 		D17DEC6FE67529BA2A0BF86F /* Pods-AlbumApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumApp.release.xcconfig"; path = "Target Support Files/Pods-AlbumApp/Pods-AlbumApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +154,7 @@
 		A3CB777924F1D73D00B0B338 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A3CB77BD24F1E30500B0B338 /* User */,
 				A3CB77AA24F1D7BA00B0B338 /* Repo */,
 				A3CB77A924F1D7B100B0B338 /* EndPoint */,
 				A3CB77A824F1D7A700B0B338 /* Model */,
@@ -228,6 +239,18 @@
 				A3CB77AB24F1D7DE00B0B338 /* UserRepo.swift */,
 			);
 			path = Repo;
+			sourceTree = "<group>";
+		};
+		A3CB77BD24F1E30500B0B338 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB77BE24F1E37100B0B338 /* UserProcessor.swift */,
+				A3CB77C024F1E37E00B0B338 /* AlbumeProcessor.swift */,
+				A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */,
+				A3CB77C224F1E39700B0B338 /* UserPresenter.swift */,
+				A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		BAE31E266EFB1026052216E0 /* Pods */ = {
@@ -355,11 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CB776624F1D1F200B0B338 /* AppDelegate.swift in Sources */,
+				A3CB77C124F1E37E00B0B338 /* AlbumeProcessor.swift in Sources */,
 				A3CB77BA24F1E04900B0B338 /* AlbumModel.swift in Sources */,
 				A3CB779A24F1D77D00B0B338 /* BaseItem.swift in Sources */,
 				A3CB77A524F1D77D00B0B338 /* String.swift in Sources */,
+				A3CB77C724F1E3CC00B0B338 /* PhotosPresenter.swift in Sources */,
 				A3CB77B824F1E03700B0B338 /* UserModel.swift in Sources */,
 				A3CB77A324F1D77D00B0B338 /* RouterController.swift in Sources */,
+				A3CB77C524F1E3B800B0B338 /* PhotosProcessor.swift in Sources */,
 				A3CB77A624F1D77D00B0B338 /* NetworkConstant.swift in Sources */,
 				A3CB779824F1D77C00B0B338 /* BasePresenter.swift in Sources */,
 				A3CB77B424F1DD8100B0B338 /* AlbumesEndPoint.swift in Sources */,
@@ -367,6 +393,7 @@
 				A3CB77A124F1D77D00B0B338 /* AuthorizationHandler.swift in Sources */,
 				A3CB77A224F1D77D00B0B338 /* NetworkService.swift in Sources */,
 				A3CB77A424F1D77D00B0B338 /* ErrorHandling.swift in Sources */,
+				A3CB77BF24F1E37100B0B338 /* UserProcessor.swift in Sources */,
 				A3CB77AC24F1D7DE00B0B338 /* UserRepo.swift in Sources */,
 				A3CB779424F1D77C00B0B338 /* NetworkServiceImpl.swift in Sources */,
 				A3CB779924F1D77C00B0B338 /* NetworkProcessor.swift in Sources */,
@@ -377,6 +404,7 @@
 				A3CB77B624F1DDAF00B0B338 /* PhotosEndPoint.swift in Sources */,
 				A3CB779324F1D77C00B0B338 /* LocalDataImpl.swift in Sources */,
 				A3CB779E24F1D77D00B0B338 /* Codable+Helpers.swift in Sources */,
+				A3CB77C324F1E39700B0B338 /* UserPresenter.swift in Sources */,
 				A3CB779724F1D77C00B0B338 /* BaseValidator.swift in Sources */,
 				A3CB779F24F1D77D00B0B338 /* Date+Helpers.swift in Sources */,
 				A3CB779624F1D77C00B0B338 /* AlamofireService.swift in Sources */,
