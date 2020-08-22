@@ -32,11 +32,13 @@ enum EndpointMethod: String {
 }
 
 enum EndpointService {
-    case search
+    case users
+    case albums
+    case photos
   
     var url: String {
        
-        return "https://api.foursquare.com/v2/\(self)"
+        return "https://jsonplaceholder.typicode.com/\(self)"
     }
     
 }

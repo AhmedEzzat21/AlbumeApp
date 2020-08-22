@@ -35,6 +35,9 @@
 		A3CB77AC24F1D7DE00B0B338 /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77AB24F1D7DE00B0B338 /* UserRepo.swift */; };
 		A3CB77AE24F1D80300B0B338 /* UserRepoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77AD24F1D80300B0B338 /* UserRepoImpl.swift */; };
 		A3CB77B024F1D8C300B0B338 /* MultiPartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77AF24F1D8C300B0B338 /* MultiPartModel.swift */; };
+		A3CB77B224F1DCBB00B0B338 /* UserEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77B124F1DCBB00B0B338 /* UserEndPoint.swift */; };
+		A3CB77B424F1DD8100B0B338 /* AlbumesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77B324F1DD8100B0B338 /* AlbumesEndPoint.swift */; };
+		A3CB77B624F1DDAF00B0B338 /* PhotosEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77B524F1DDAF00B0B338 /* PhotosEndPoint.swift */; };
 		B00927B37DEE9B4C745EEEAC /* Pods_AlbumApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E94AB0881BAC5B724F69D5 /* Pods_AlbumApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,9 @@
 		A3CB77AB24F1D7DE00B0B338 /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
 		A3CB77AD24F1D80300B0B338 /* UserRepoImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoImpl.swift; sourceTree = "<group>"; };
 		A3CB77AF24F1D8C300B0B338 /* MultiPartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPartModel.swift; sourceTree = "<group>"; };
+		A3CB77B124F1DCBB00B0B338 /* UserEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndPoint.swift; sourceTree = "<group>"; };
+		A3CB77B324F1DD8100B0B338 /* AlbumesEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumesEndPoint.swift; sourceTree = "<group>"; };
+		A3CB77B524F1DDAF00B0B338 /* PhotosEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosEndPoint.swift; sourceTree = "<group>"; };
 		D17DEC6FE67529BA2A0BF86F /* Pods-AlbumApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumApp.release.xcconfig"; path = "Target Support Files/Pods-AlbumApp/Pods-AlbumApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +206,9 @@
 		A3CB77A924F1D7B100B0B338 /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
+				A3CB77B124F1DCBB00B0B338 /* UserEndPoint.swift */,
+				A3CB77B324F1DD8100B0B338 /* AlbumesEndPoint.swift */,
+				A3CB77B524F1DDAF00B0B338 /* PhotosEndPoint.swift */,
 			);
 			path = EndPoint;
 			sourceTree = "<group>";
@@ -342,6 +351,7 @@
 				A3CB77A324F1D77D00B0B338 /* RouterController.swift in Sources */,
 				A3CB77A624F1D77D00B0B338 /* NetworkConstant.swift in Sources */,
 				A3CB779824F1D77C00B0B338 /* BasePresenter.swift in Sources */,
+				A3CB77B424F1DD8100B0B338 /* AlbumesEndPoint.swift in Sources */,
 				A3CB779D24F1D77D00B0B338 /* BaseView.swift in Sources */,
 				A3CB77A124F1D77D00B0B338 /* AuthorizationHandler.swift in Sources */,
 				A3CB77A224F1D77D00B0B338 /* NetworkService.swift in Sources */,
@@ -349,8 +359,10 @@
 				A3CB77AC24F1D7DE00B0B338 /* UserRepo.swift in Sources */,
 				A3CB779424F1D77C00B0B338 /* NetworkServiceImpl.swift in Sources */,
 				A3CB779924F1D77C00B0B338 /* NetworkProcessor.swift in Sources */,
+				A3CB77B224F1DCBB00B0B338 /* UserEndPoint.swift in Sources */,
 				A3CB77A024F1D77D00B0B338 /* Dynamic.swift in Sources */,
 				A3CB77B024F1D8C300B0B338 /* MultiPartModel.swift in Sources */,
+				A3CB77B624F1DDAF00B0B338 /* PhotosEndPoint.swift in Sources */,
 				A3CB779324F1D77C00B0B338 /* LocalDataImpl.swift in Sources */,
 				A3CB779E24F1D77D00B0B338 /* Codable+Helpers.swift in Sources */,
 				A3CB779724F1D77C00B0B338 /* BaseValidator.swift in Sources */,
