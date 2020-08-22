@@ -11,5 +11,8 @@ import Promises
 
 protocol UserRepo {
     func getUserInfo() -> Promise<UserModel>
+    func getAlbumes() -> Promise<AlbumModel>
+    func getPhotos(albumId : Int) -> Promise<PhotosModel>
+
 
 }
