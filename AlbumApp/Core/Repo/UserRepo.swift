@@ -10,5 +10,6 @@ import Foundation
 import Promises
 
 protocol UserRepo {
+    func getUserInfo() -> Promise<UserModel>
 
 }

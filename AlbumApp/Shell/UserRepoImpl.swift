@@ -10,6 +10,7 @@ import Foundation
 import Promises
 
 class UserRepoImpl: UserRepo {
+ 
    
     
    
@@ -20,6 +21,9 @@ class UserRepoImpl: UserRepo {
         self.network = network
         self.localData = localData
     }
-    
+    func getUserInfo() -> Promise<UserModel> {
+        network.callModel(UserModel.self, endpoint: UserEndPoint())
+     }
+     
 
 }
