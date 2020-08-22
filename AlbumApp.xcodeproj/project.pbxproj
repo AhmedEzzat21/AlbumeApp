@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,30 @@
 		A3CB776D24F1D1F200B0B338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CB776B24F1D1F200B0B338 /* Main.storyboard */; };
 		A3CB776F24F1D1F400B0B338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CB776E24F1D1F400B0B338 /* Assets.xcassets */; };
 		A3CB777224F1D1F400B0B338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CB777024F1D1F400B0B338 /* LaunchScreen.storyboard */; };
+		A3CB779324F1D77C00B0B338 /* LocalDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB777C24F1D77C00B0B338 /* LocalDataImpl.swift */; };
+		A3CB779424F1D77C00B0B338 /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB777D24F1D77C00B0B338 /* NetworkServiceImpl.swift */; };
+		A3CB779524F1D77C00B0B338 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB777E24F1D77C00B0B338 /* LocalData.swift */; };
+		A3CB779624F1D77C00B0B338 /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB777F24F1D77C00B0B338 /* AlamofireService.swift */; };
+		A3CB779724F1D77C00B0B338 /* BaseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778124F1D77C00B0B338 /* BaseValidator.swift */; };
+		A3CB779824F1D77C00B0B338 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778224F1D77C00B0B338 /* BasePresenter.swift */; };
+		A3CB779924F1D77C00B0B338 /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778324F1D77C00B0B338 /* NetworkProcessor.swift */; };
+		A3CB779A24F1D77D00B0B338 /* BaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778424F1D77C00B0B338 /* BaseItem.swift */; };
+		A3CB779B24F1D77D00B0B338 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778524F1D77C00B0B338 /* BaseError.swift */; };
+		A3CB779C24F1D77D00B0B338 /* NoneAuthorizationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778624F1D77C00B0B338 /* NoneAuthorizationHandler.swift */; };
+		A3CB779D24F1D77D00B0B338 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778724F1D77C00B0B338 /* BaseView.swift */; };
+		A3CB779E24F1D77D00B0B338 /* Codable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778924F1D77C00B0B338 /* Codable+Helpers.swift */; };
+		A3CB779F24F1D77D00B0B338 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778A24F1D77C00B0B338 /* Date+Helpers.swift */; };
+		A3CB77A024F1D77D00B0B338 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778B24F1D77C00B0B338 /* Dynamic.swift */; };
+		A3CB77A124F1D77D00B0B338 /* AuthorizationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778C24F1D77C00B0B338 /* AuthorizationHandler.swift */; };
+		A3CB77A224F1D77D00B0B338 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778D24F1D77C00B0B338 /* NetworkService.swift */; };
+		A3CB77A324F1D77D00B0B338 /* RouterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778E24F1D77C00B0B338 /* RouterController.swift */; };
+		A3CB77A424F1D77D00B0B338 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB778F24F1D77C00B0B338 /* ErrorHandling.swift */; };
+		A3CB77A524F1D77D00B0B338 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB779024F1D77C00B0B338 /* String.swift */; };
+		A3CB77A624F1D77D00B0B338 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB779124F1D77C00B0B338 /* NetworkConstant.swift */; };
+		A3CB77A724F1D77D00B0B338 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB779224F1D77C00B0B338 /* Endpoint.swift */; };
+		A3CB77AC24F1D7DE00B0B338 /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77AB24F1D7DE00B0B338 /* UserRepo.swift */; };
+		A3CB77AE24F1D80300B0B338 /* UserRepoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77AD24F1D80300B0B338 /* UserRepoImpl.swift */; };
+		A3CB77B024F1D8C300B0B338 /* MultiPartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77AF24F1D8C300B0B338 /* MultiPartModel.swift */; };
 		B00927B37DEE9B4C745EEEAC /* Pods_AlbumApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E94AB0881BAC5B724F69D5 /* Pods_AlbumApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +47,30 @@
 		A3CB776E24F1D1F400B0B338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3CB777124F1D1F400B0B338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3CB777324F1D1F400B0B338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CB777C24F1D77C00B0B338 /* LocalDataImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataImpl.swift; sourceTree = "<group>"; };
+		A3CB777D24F1D77C00B0B338 /* NetworkServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceImpl.swift; sourceTree = "<group>"; };
+		A3CB777E24F1D77C00B0B338 /* LocalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		A3CB777F24F1D77C00B0B338 /* AlamofireService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
+		A3CB778124F1D77C00B0B338 /* BaseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseValidator.swift; sourceTree = "<group>"; };
+		A3CB778224F1D77C00B0B338 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		A3CB778324F1D77C00B0B338 /* NetworkProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+		A3CB778424F1D77C00B0B338 /* BaseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseItem.swift; sourceTree = "<group>"; };
+		A3CB778524F1D77C00B0B338 /* BaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		A3CB778624F1D77C00B0B338 /* NoneAuthorizationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoneAuthorizationHandler.swift; sourceTree = "<group>"; };
+		A3CB778724F1D77C00B0B338 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A3CB778924F1D77C00B0B338 /* Codable+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Helpers.swift"; sourceTree = "<group>"; };
+		A3CB778A24F1D77C00B0B338 /* Date+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+		A3CB778B24F1D77C00B0B338 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		A3CB778C24F1D77C00B0B338 /* AuthorizationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationHandler.swift; sourceTree = "<group>"; };
+		A3CB778D24F1D77C00B0B338 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A3CB778E24F1D77C00B0B338 /* RouterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterController.swift; sourceTree = "<group>"; };
+		A3CB778F24F1D77C00B0B338 /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		A3CB779024F1D77C00B0B338 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A3CB779124F1D77C00B0B338 /* NetworkConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		A3CB779224F1D77C00B0B338 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A3CB77AB24F1D7DE00B0B338 /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
+		A3CB77AD24F1D80300B0B338 /* UserRepoImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoImpl.swift; sourceTree = "<group>"; };
+		A3CB77AF24F1D8C300B0B338 /* MultiPartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPartModel.swift; sourceTree = "<group>"; };
 		D17DEC6FE67529BA2A0BF86F /* Pods-AlbumApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumApp.release.xcconfig"; path = "Target Support Files/Pods-AlbumApp/Pods-AlbumApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +115,11 @@
 		A3CB776424F1D1F200B0B338 /* AlbumApp */ = {
 			isa = PBXGroup;
 			children = (
+				A3CB777924F1D73D00B0B338 /* Core */,
+				A3CB777A24F1D74300B0B338 /* Shell */,
+				A3CB778024F1D77C00B0B338 /* Base */,
+				A3CB778824F1D77C00B0B338 /* Helpers */,
+				A3CB777B24F1D77C00B0B338 /* Network */,
 				A3CB776524F1D1F200B0B338 /* AppDelegate.swift */,
 				A3CB776B24F1D1F200B0B338 /* Main.storyboard */,
 				A3CB776E24F1D1F400B0B338 /* Assets.xcassets */,
@@ -76,13 +129,95 @@
 			path = AlbumApp;
 			sourceTree = "<group>";
 		};
+		A3CB777924F1D73D00B0B338 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB77AA24F1D7BA00B0B338 /* Repo */,
+				A3CB77A924F1D7B100B0B338 /* EndPoint */,
+				A3CB77A824F1D7A700B0B338 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A3CB777A24F1D74300B0B338 /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB77AD24F1D80300B0B338 /* UserRepoImpl.swift */,
+			);
+			path = Shell;
+			sourceTree = "<group>";
+		};
+		A3CB777B24F1D77C00B0B338 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB777C24F1D77C00B0B338 /* LocalDataImpl.swift */,
+				A3CB777D24F1D77C00B0B338 /* NetworkServiceImpl.swift */,
+				A3CB777E24F1D77C00B0B338 /* LocalData.swift */,
+				A3CB777F24F1D77C00B0B338 /* AlamofireService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A3CB778024F1D77C00B0B338 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB778124F1D77C00B0B338 /* BaseValidator.swift */,
+				A3CB778224F1D77C00B0B338 /* BasePresenter.swift */,
+				A3CB778324F1D77C00B0B338 /* NetworkProcessor.swift */,
+				A3CB778424F1D77C00B0B338 /* BaseItem.swift */,
+				A3CB778524F1D77C00B0B338 /* BaseError.swift */,
+				A3CB778624F1D77C00B0B338 /* NoneAuthorizationHandler.swift */,
+				A3CB778724F1D77C00B0B338 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A3CB778824F1D77C00B0B338 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB778924F1D77C00B0B338 /* Codable+Helpers.swift */,
+				A3CB778A24F1D77C00B0B338 /* Date+Helpers.swift */,
+				A3CB778B24F1D77C00B0B338 /* Dynamic.swift */,
+				A3CB778C24F1D77C00B0B338 /* AuthorizationHandler.swift */,
+				A3CB778D24F1D77C00B0B338 /* NetworkService.swift */,
+				A3CB778E24F1D77C00B0B338 /* RouterController.swift */,
+				A3CB778F24F1D77C00B0B338 /* ErrorHandling.swift */,
+				A3CB779024F1D77C00B0B338 /* String.swift */,
+				A3CB779124F1D77C00B0B338 /* NetworkConstant.swift */,
+				A3CB779224F1D77C00B0B338 /* Endpoint.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A3CB77A824F1D7A700B0B338 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB77AF24F1D8C300B0B338 /* MultiPartModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3CB77A924F1D7B100B0B338 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		A3CB77AA24F1D7BA00B0B338 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB77AB24F1D7DE00B0B338 /* UserRepo.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
 		BAE31E266EFB1026052216E0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				329870A643E40652527C4D68 /* Pods-AlbumApp.debug.xcconfig */,
 				D17DEC6FE67529BA2A0BF86F /* Pods-AlbumApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -202,6 +337,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CB776624F1D1F200B0B338 /* AppDelegate.swift in Sources */,
+				A3CB779A24F1D77D00B0B338 /* BaseItem.swift in Sources */,
+				A3CB77A524F1D77D00B0B338 /* String.swift in Sources */,
+				A3CB77A324F1D77D00B0B338 /* RouterController.swift in Sources */,
+				A3CB77A624F1D77D00B0B338 /* NetworkConstant.swift in Sources */,
+				A3CB779824F1D77C00B0B338 /* BasePresenter.swift in Sources */,
+				A3CB779D24F1D77D00B0B338 /* BaseView.swift in Sources */,
+				A3CB77A124F1D77D00B0B338 /* AuthorizationHandler.swift in Sources */,
+				A3CB77A224F1D77D00B0B338 /* NetworkService.swift in Sources */,
+				A3CB77A424F1D77D00B0B338 /* ErrorHandling.swift in Sources */,
+				A3CB77AC24F1D7DE00B0B338 /* UserRepo.swift in Sources */,
+				A3CB779424F1D77C00B0B338 /* NetworkServiceImpl.swift in Sources */,
+				A3CB779924F1D77C00B0B338 /* NetworkProcessor.swift in Sources */,
+				A3CB77A024F1D77D00B0B338 /* Dynamic.swift in Sources */,
+				A3CB77B024F1D8C300B0B338 /* MultiPartModel.swift in Sources */,
+				A3CB779324F1D77C00B0B338 /* LocalDataImpl.swift in Sources */,
+				A3CB779E24F1D77D00B0B338 /* Codable+Helpers.swift in Sources */,
+				A3CB779724F1D77C00B0B338 /* BaseValidator.swift in Sources */,
+				A3CB779F24F1D77D00B0B338 /* Date+Helpers.swift in Sources */,
+				A3CB779624F1D77C00B0B338 /* AlamofireService.swift in Sources */,
+				A3CB779524F1D77C00B0B338 /* LocalData.swift in Sources */,
+				A3CB77AE24F1D80300B0B338 /* UserRepoImpl.swift in Sources */,
+				A3CB779B24F1D77D00B0B338 /* BaseError.swift in Sources */,
+				A3CB77A724F1D77D00B0B338 /* Endpoint.swift in Sources */,
+				A3CB779C24F1D77D00B0B338 /* NoneAuthorizationHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2K8QX5BJD;
+				DEVELOPMENT_TEAM = SSSFKQN987;
 				INFOPLIST_FILE = AlbumApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,7 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2K8QX5BJD;
+				DEVELOPMENT_TEAM = SSSFKQN987;
 				INFOPLIST_FILE = AlbumApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
