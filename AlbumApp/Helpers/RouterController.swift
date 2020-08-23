@@ -17,12 +17,12 @@ enum Storyboard: String {
 }
 
 enum View: String {
-    case startScreen = "StartScreenView"
+    case photosView = "PhotosView"
 
     private var storyboard: Storyboard {
         switch self {
      
-        case .startScreen: return .main
+        case .photosView: return .main
         }
     }
     
