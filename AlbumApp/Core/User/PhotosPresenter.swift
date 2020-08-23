@@ -17,6 +17,7 @@ class PhotosPresenter: BasePresenter {
     let albumePhoto: Observable<String?> = Observable("")
     let albumeTitle: Observable<String?> = Observable("")
     var item: albumeItem
+    
 
 
     var photos: Dynamic<[PhotosModel]> = Dynamic([])
@@ -30,6 +31,8 @@ class PhotosPresenter: BasePresenter {
     }
     
     override func hydrate() {
+        self.albumeTitle.value = self.item.albumeTitle
+
     }
  
     func getPhotos(){

@@ -11,9 +11,11 @@ import Foundation
 class albumeItem: BaseItem {
     
     var albumeId: Int
+     var albumeTitle: String
     
-    init(_ albumeId:Int ) {
+    init(_ albumeId:Int , albumeTitle : String ) {
         self.albumeId = albumeId
+        self.albumeTitle = albumeTitle
  
         
     }

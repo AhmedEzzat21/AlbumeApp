@@ -124,13 +124,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OHg-tM-OyI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="t0W-cQ-0Ps"/>
                     <connections>
                         <outlet property="photosCollectionView" destination="DtQ-2O-BSG" id="cvx-lf-HNj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HGe-F1-M3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="49"/>
+            <point key="canvasLocation" x="2792.753623188406" y="48.883928571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NVa-kN-oaZ">

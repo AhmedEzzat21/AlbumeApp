@@ -32,7 +32,8 @@ class PhotosView: BaseView<PhotosPresenter, albumeItem> {
         
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
-            navigationController?.navigationBar.topItem?.title = presenter.albumeTitle.value
+            navigationController?.navigationBar.topItem?.title = "Profile"
+            
             navigationController?.navigationItem.largeTitleDisplayMode = .automatic
             
             let attributes = [

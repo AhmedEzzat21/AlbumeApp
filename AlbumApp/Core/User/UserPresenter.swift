@@ -30,8 +30,8 @@ class UserPresenter: BasePresenter {
     override func hydrate() {
         getAlbumes()
     }
-    func routeToDetails(albumeId:Int) {
-        router.push(view: .photosView, presenter: PhotosPresenter.self, item: albumeItem(albumeId))
+    func routeToDetails(albumeId:Int , albumeTitle : String) {
+        router.push(view: .photosView, presenter: PhotosPresenter.self, item: albumeItem(albumeId, albumeTitle: albumeTitle))
        }
     func getUserInfo(){
         showLoading()
