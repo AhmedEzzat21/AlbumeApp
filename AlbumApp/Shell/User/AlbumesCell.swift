@@ -14,10 +14,6 @@ class AlbumesCell: UICollectionViewCell {
     func configure(result: AlbumModel, index: Int) {
         self.itemIndex = index
         albumeTitellabel.text = result.title
-       
-
-   
-        
     }
 
 }
