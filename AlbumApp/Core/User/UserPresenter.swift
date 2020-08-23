@@ -51,7 +51,7 @@ class UserPresenter: BasePresenter {
               .then { (response) in
                   
                   self.hideLoading()
-                self.albumes.value = [response]
+                self.albumes.value = response
 
                   
           }.catch { (error) in

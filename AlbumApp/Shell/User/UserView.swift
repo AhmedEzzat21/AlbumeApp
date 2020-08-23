@@ -25,7 +25,13 @@ class UserView: BaseView<UserPresenter, BaseItem> {
         presenter = UserPresenter(router: RouterManager(self), userRepo: UserRepoImpl())
         presenter.userName.bind(to: userNameLbl)
         presenter.userAdress.bind(to: UserAddressLbl)
+        presenter.albumes.bind { (_) in
+                    self.albumesCollectionView.reloadData()
+
+        }
+
         presenter.getUserInfo()
+        presenter.getAlbumes()
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -62,8 +68,9 @@ class UserView: BaseView<UserPresenter, BaseItem> {
 
 extension UserView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    
+     print("😁😁\(presenter.albumes.value.count)")
         return presenter.albumes.value.count
+       
     
         
     }
@@ -82,7 +89,7 @@ extension UserView: UICollectionViewDataSource, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
  
-            return CGSize( width: (collectionView.frame.width), height: 120 )
+            return CGSize( width: (collectionView.frame.width), height: 50 )
 
         
     }

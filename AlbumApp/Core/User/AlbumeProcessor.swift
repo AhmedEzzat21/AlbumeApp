@@ -8,7 +8,7 @@
 
 import Foundation
 import Promises
-class AlbumeProcessor:  NetworkProcessor<AlbumModel>  {
+class AlbumeProcessor:  NetworkProcessor<AlbumModels>  {
     var userRepo: UserRepo
 
     init(userRepo: UserRepo) {
@@ -21,7 +21,7 @@ class AlbumeProcessor:  NetworkProcessor<AlbumModel>  {
     override func validate() throws {
     }
     
-    override func process() throws -> Promise<AlbumModel> {
+    override func process() throws -> Promise<AlbumModels> {
         return userRepo.getAlbumes()
         
     }
