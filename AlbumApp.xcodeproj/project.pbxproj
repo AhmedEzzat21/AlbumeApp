@@ -46,6 +46,7 @@
 		A3CB77C324F1E39700B0B338 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C224F1E39700B0B338 /* UserPresenter.swift */; };
 		A3CB77C524F1E3B800B0B338 /* PhotosProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */; };
 		A3CB77C724F1E3CC00B0B338 /* PhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */; };
+		A3CB77CB24F1E90700B0B338 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77CA24F1E90700B0B338 /* UserView.swift */; };
 		B00927B37DEE9B4C745EEEAC /* Pods_AlbumApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E94AB0881BAC5B724F69D5 /* Pods_AlbumApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		A3CB77C224F1E39700B0B338 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosProcessor.swift; sourceTree = "<group>"; };
 		A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPresenter.swift; sourceTree = "<group>"; };
+		A3CB77CA24F1E90700B0B338 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		D17DEC6FE67529BA2A0BF86F /* Pods-AlbumApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumApp.release.xcconfig"; path = "Target Support Files/Pods-AlbumApp/Pods-AlbumApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,7 +167,8 @@
 		A3CB777A24F1D74300B0B338 /* Shell */ = {
 			isa = PBXGroup;
 			children = (
-				A3CB77AD24F1D80300B0B338 /* UserRepoImpl.swift */,
+				A3CB77C924F1E8F700B0B338 /* User */,
+				A3CB77C824F1E8ED00B0B338 /* Repo */,
 			);
 			path = Shell;
 			sourceTree = "<group>";
@@ -249,6 +252,22 @@
 				A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */,
 				A3CB77C224F1E39700B0B338 /* UserPresenter.swift */,
 				A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		A3CB77C824F1E8ED00B0B338 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB77AD24F1D80300B0B338 /* UserRepoImpl.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		A3CB77C924F1E8F700B0B338 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB77CA24F1E90700B0B338 /* UserView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -395,6 +414,7 @@
 				A3CB77A424F1D77D00B0B338 /* ErrorHandling.swift in Sources */,
 				A3CB77BF24F1E37100B0B338 /* UserProcessor.swift in Sources */,
 				A3CB77AC24F1D7DE00B0B338 /* UserRepo.swift in Sources */,
+				A3CB77CB24F1E90700B0B338 /* UserView.swift in Sources */,
 				A3CB779424F1D77C00B0B338 /* NetworkServiceImpl.swift in Sources */,
 				A3CB779924F1D77C00B0B338 /* NetworkProcessor.swift in Sources */,
 				A3CB77B224F1DCBB00B0B338 /* UserEndPoint.swift in Sources */,
