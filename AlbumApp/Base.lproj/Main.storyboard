@@ -91,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DtQ-2O-BSG">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2Sr-mP-wGe">
                                     <size key="itemSize" width="128" height="128"/>
@@ -114,18 +114,29 @@
                                     <outlet property="delegate" destination="T3N-x8-DKI" id="NX8-f2-V8N"/>
                                 </connections>
                             </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pC6-b8-dpP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="T3N-x8-DKI" id="gpj-NY-Lxw"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="OHg-tM-OyI" firstAttribute="bottom" secondItem="DtQ-2O-BSG" secondAttribute="bottom" id="1gB-7V-3wz"/>
+                            <constraint firstItem="pC6-b8-dpP" firstAttribute="leading" secondItem="OHg-tM-OyI" secondAttribute="leading" id="8ta-Lq-Qtc"/>
+                            <constraint firstItem="pC6-b8-dpP" firstAttribute="top" secondItem="OHg-tM-OyI" secondAttribute="top" id="HWa-ff-vrx"/>
                             <constraint firstItem="OHg-tM-OyI" firstAttribute="trailing" secondItem="DtQ-2O-BSG" secondAttribute="trailing" id="Jau-zY-QfX"/>
-                            <constraint firstItem="DtQ-2O-BSG" firstAttribute="top" secondItem="OHg-tM-OyI" secondAttribute="top" id="awt-Vq-kup"/>
+                            <constraint firstItem="DtQ-2O-BSG" firstAttribute="top" secondItem="pC6-b8-dpP" secondAttribute="bottom" id="Nnw-lW-j1z"/>
                             <constraint firstItem="DtQ-2O-BSG" firstAttribute="leading" secondItem="OHg-tM-OyI" secondAttribute="leading" id="hoI-md-Vl4"/>
+                            <constraint firstItem="pC6-b8-dpP" firstAttribute="trailing" secondItem="OHg-tM-OyI" secondAttribute="trailing" id="moS-Ya-J45"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OHg-tM-OyI"/>
                     </view>
                     <navigationItem key="navigationItem" id="t0W-cQ-0Ps"/>
                     <connections>
+                        <outlet property="SearchTab" destination="pC6-b8-dpP" id="hc9-bD-Ss5"/>
                         <outlet property="photosCollectionView" destination="DtQ-2O-BSG" id="cvx-lf-HNj"/>
                     </connections>
                 </viewController>

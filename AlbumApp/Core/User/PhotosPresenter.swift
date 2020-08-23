@@ -17,10 +17,9 @@ class PhotosPresenter: BasePresenter {
     let albumePhoto: Observable<String?> = Observable("")
     let albumeTitle: Observable<String?> = Observable("")
     var item: albumeItem
-    
-
-
     var photos: Dynamic<[PhotosModel]> = Dynamic([])
+    var fullPhotos: Dynamic<[PhotosModel]> = Dynamic([])
+
     let userRepo: UserRepo
     
     init(router: RouterManagerProtocol, userRepo: UserRepo , item : albumeItem) {
@@ -40,6 +39,7 @@ class PhotosPresenter: BasePresenter {
         PhotosProcessor(userRepo: userRepo, albumeId: item.albumeId).execute()
               .then { (response) in
                 self.photos.value = response
+                self.fullPhotos.value = response
                   self.hideLoading()
 
                   

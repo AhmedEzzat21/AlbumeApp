@@ -12,6 +12,8 @@ import UIKit
 
 class PhotosView: BaseView<PhotosPresenter, albumeItem> {
     
+    @IBOutlet weak var SearchTab: UISearchBar!
+    
     @IBOutlet weak var photosCollectionView: UICollectionView!{
            didSet {
                self.photosCollectionView.register(UINib(nibName: String(describing: PhotosCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PhotosCell.self))
@@ -19,12 +21,15 @@ class PhotosView: BaseView<PhotosPresenter, albumeItem> {
            }
 
        }
+    var timer: Timer!
+
     override func bindind() {
         presenter = PhotosPresenter(router: RouterManager(self), userRepo: UserRepoImpl(), item: item)
         presenter.photos.bind { (_) in
                     self.photosCollectionView.reloadData()
 
         }
+      self.SearchTab.endEditing(true)
 
         presenter.getPhotos()
     }
@@ -96,4 +101,45 @@ extension PhotosView: UICollectionViewDataSource, UICollectionViewDelegate, UICo
         return 0
     }
     
+}
+extension PhotosView : UISearchBarDelegate{
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        searchBar.resignFirstResponder()
+
+    }
+    
+    override var prefersStatusBarHidden: Bool
+    {
+        return true
+    }
+
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        startTimer(searchQuery: searchText)
+    }
+    private func startTimer(searchQuery: String) {
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ApplySearch), userInfo: ["SearchQuery": searchQuery], repeats: false)
+    }
+    @objc private func ApplySearch() {
+        if  let userInfo = timer.userInfo as? [String: String],
+            let searchQuery = userInfo["SearchQuery"] {
+            applySearchOnViews(searchQuery: searchQuery)
+        }
+    }
+    
+    
+    
+    
+    func applySearchOnViews(searchQuery: String){
+        self.presenter.photos.value = searchQuery == "" ? self.presenter.fullPhotos.value : self.presenter.photos.value.filter{
+            (service) -> Bool in
+            return service.title?.localizedCaseInsensitiveContains(searchQuery) ?? true 
+        }
+        photosCollectionView.reloadData()
+    }
 }
