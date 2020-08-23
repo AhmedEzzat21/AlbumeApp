@@ -16,19 +16,32 @@ class PhotosPresenter: BasePresenter {
     let albumeId: Observable<String?> = Observable("")
     let albumePhoto: Observable<String?> = Observable("")
     let albumeTitle: Observable<String?> = Observable("")
+    var item: albumeItem
 
 
-    var albumes: Dynamic<[AlbumModel]> = Dynamic([])
+    var photos: Dynamic<[PhotosModel]> = Dynamic([])
     let userRepo: UserRepo
     
-    init(router: RouterManagerProtocol, userRepo: UserRepo) {
+    init(router: RouterManagerProtocol, userRepo: UserRepo , item : albumeItem) {
         self.router = router
         self.userRepo = userRepo
+        self.item = item
         
     }
     
     override func hydrate() {
     }
  
-    
+    func getPhotos(){
+          showLoading()
+        PhotosProcessor(userRepo: userRepo, albumeId: item.albumeId).execute()
+              .then { (response) in
+                self.photos.value = response
+                  self.hideLoading()
+
+                  
+          }.catch { (error) in
+              self.hideLoading()
+              self.showSystemError(error: error)}
+      }
 }

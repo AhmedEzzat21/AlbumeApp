@@ -84,7 +84,10 @@ extension UserView: UICollectionViewDataSource, UICollectionViewDelegate, UIColl
         
         
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.routeToDetails(albumeId: presenter.albumes.value[indexPath.row].id ?? 0)
+      
+    }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

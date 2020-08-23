@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-class PhotosView: BaseView<PhotosPresenter, BaseItem> {
+class PhotosView: BaseView<PhotosPresenter, albumeItem> {
     
     @IBOutlet weak var photosCollectionView: UICollectionView!{
            didSet {
@@ -20,8 +20,13 @@ class PhotosView: BaseView<PhotosPresenter, BaseItem> {
 
        }
     override func bindind() {
-        presenter = PhotosPresenter(router: RouterManager(self), userRepo: UserRepoImpl())
+        presenter = PhotosPresenter(router: RouterManager(self), userRepo: UserRepoImpl(), item: item)
+        presenter.photos.bind { (_) in
+                    self.photosCollectionView.reloadData()
 
+        }
+
+        presenter.getPhotos()
     }
     override func viewWillAppear(_ animated: Bool) {
         
@@ -57,9 +62,7 @@ class PhotosView: BaseView<PhotosPresenter, BaseItem> {
 
 extension PhotosView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-     print("😁😁\(presenter.albumes.value.count)")
-        return 10
-            //presenter.albumes.value.count
+        return presenter.photos.value.count
        
     
         
@@ -68,7 +71,7 @@ extension PhotosView: UICollectionViewDataSource, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
             let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PhotosCell.self), for: indexPath))  as! PhotosCell
-           // cell.configure(result: presenter.albumes.value[indexPath.row], index: indexPath.row)
+            cell.configure(result: presenter.photos.value[indexPath.row], index: indexPath.row)
             return cell
         
         

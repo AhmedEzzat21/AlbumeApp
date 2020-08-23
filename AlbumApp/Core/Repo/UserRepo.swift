@@ -12,7 +12,7 @@ import Promises
 protocol UserRepo {
     func getUserInfo() -> Promise<UserModel>
     func getAlbumes() -> Promise<AlbumModels>
-    func getPhotos(albumId : Int) -> Promise<PhotosModel>
+    func getPhotos(albumId : Int) -> Promise<photoModels>
 
 
 }

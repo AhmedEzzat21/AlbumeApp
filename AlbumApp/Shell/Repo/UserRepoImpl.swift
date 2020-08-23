@@ -27,8 +27,8 @@ class UserRepoImpl: UserRepo {
         network.callModel(AlbumModels.self, endpoint: AlbumesEndPoint())
     }
     
-    func getPhotos(albumId: Int) -> Promise<PhotosModel> {
-        network.callModel(PhotosModel.self, endpoint: PhotosEndPoint(albumeId: albumId))
+    func getPhotos(albumId: Int) -> Promise<photoModels> {
+        network.callModel(photoModels.self, endpoint: PhotosEndPoint(albumeId: albumId))
     }
 
 }

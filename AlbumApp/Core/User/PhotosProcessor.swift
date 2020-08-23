@@ -8,7 +8,7 @@
 
 import Foundation
 import Promises
-class PhotosProcessor:  NetworkProcessor<PhotosModel>  {
+class PhotosProcessor:  NetworkProcessor<photoModels>  {
     var userRepo: UserRepo
     var albumeId: Int
     
@@ -23,7 +23,7 @@ class PhotosProcessor:  NetworkProcessor<PhotosModel>  {
     override func validate() throws {
     }
     
-    override func process() throws -> Promise<PhotosModel> {
+    override func process() throws -> Promise<photoModels> {
         return userRepo.getPhotos(albumId: albumeId)
         
     }
