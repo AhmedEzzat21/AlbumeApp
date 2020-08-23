@@ -18,4 +18,5 @@ struct AlbumModel: Codable {
         case id, title
     }
 }
+//typealias AlbumModels = [AlbumModel]
 

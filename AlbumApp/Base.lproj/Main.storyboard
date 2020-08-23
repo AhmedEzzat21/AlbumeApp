@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,19 +23,50 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Address" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADm-R4-WEC">
-                                <rect key="frame" x="20" y="187.5" width="394" height="20.5"/>
+                                <rect key="frame" x="20" y="187.5" width="294" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="xBA-bW-CGr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nDe-BC-dIt">
+                                <rect key="frame" x="0.0" y="236.5" width="414" height="625.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="glS-q2-V9Y">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Agg-8G-WV3">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gdi-d7-Rjv">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="xyB-uF-VmJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="V9G-qI-OjK"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="nDe-BC-dIt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6WH-JI-gnz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nDe-BC-dIt" secondAttribute="bottom" id="EgZ-o7-RuY"/>
                             <constraint firstItem="8YD-Hb-xcG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nle-OS-cg7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ADm-R4-WEC" secondAttribute="trailing" id="RGH-re-FMT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nDe-BC-dIt" secondAttribute="trailing" id="Wav-R6-AmQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8YD-Hb-xcG" secondAttribute="trailing" id="ZGJ-Um-ydZ"/>
+                            <constraint firstItem="nDe-BC-dIt" firstAttribute="top" secondItem="ADm-R4-WEC" secondAttribute="bottom" id="bHX-Wq-85i"/>
                             <constraint firstItem="ADm-R4-WEC" firstAttribute="top" secondItem="8YD-Hb-xcG" secondAttribute="bottom" constant="37" id="iRH-Nl-M0v"/>
                             <constraint firstItem="ADm-R4-WEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qwO-Yx-AHz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ADm-R4-WEC" secondAttribute="trailing" constant="100" id="tP3-5q-BU9"/>
                             <constraint firstItem="8YD-Hb-xcG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="wrE-Aa-6Hr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,6 +74,7 @@
                     <navigationItem key="navigationItem" id="F7d-MZ-4Qt"/>
                     <connections>
                         <outlet property="UserAddressLbl" destination="ADm-R4-WEC" id="CeD-GR-2qn"/>
+                        <outlet property="albumesCollectionView" destination="nDe-BC-dIt" id="Y8w-ty-Kjk"/>
                         <outlet property="userNameLbl" destination="8YD-Hb-xcG" id="vdF-f3-x8z"/>
                     </connections>
                 </viewController>

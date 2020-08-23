@@ -47,6 +47,8 @@
 		A3CB77C524F1E3B800B0B338 /* PhotosProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */; };
 		A3CB77C724F1E3CC00B0B338 /* PhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */; };
 		A3CB77CB24F1E90700B0B338 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77CA24F1E90700B0B338 /* UserView.swift */; };
+		A3CB77CE24F1F00200B0B338 /* AlbumesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB77CC24F1F00200B0B338 /* AlbumesCell.swift */; };
+		A3CB77CF24F1F00200B0B338 /* AlbumesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CB77CD24F1F00200B0B338 /* AlbumesCell.xib */; };
 		B00927B37DEE9B4C745EEEAC /* Pods_AlbumApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E94AB0881BAC5B724F69D5 /* Pods_AlbumApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosProcessor.swift; sourceTree = "<group>"; };
 		A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPresenter.swift; sourceTree = "<group>"; };
 		A3CB77CA24F1E90700B0B338 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		A3CB77CC24F1F00200B0B338 /* AlbumesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumesCell.swift; sourceTree = "<group>"; };
+		A3CB77CD24F1F00200B0B338 /* AlbumesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumesCell.xib; sourceTree = "<group>"; };
 		D17DEC6FE67529BA2A0BF86F /* Pods-AlbumApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumApp.release.xcconfig"; path = "Target Support Files/Pods-AlbumApp/Pods-AlbumApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				A3CB77CA24F1E90700B0B338 /* UserView.swift */,
+				A3CB77CC24F1F00200B0B338 /* AlbumesCell.swift */,
+				A3CB77CD24F1F00200B0B338 /* AlbumesCell.xib */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CB777224F1D1F400B0B338 /* LaunchScreen.storyboard in Resources */,
+				A3CB77CF24F1F00200B0B338 /* AlbumesCell.xib in Resources */,
 				A3CB776F24F1D1F400B0B338 /* Assets.xcassets in Resources */,
 				A3CB776D24F1D1F200B0B338 /* Main.storyboard in Resources */,
 			);
@@ -415,6 +422,7 @@
 				A3CB77BF24F1E37100B0B338 /* UserProcessor.swift in Sources */,
 				A3CB77AC24F1D7DE00B0B338 /* UserRepo.swift in Sources */,
 				A3CB77CB24F1E90700B0B338 /* UserView.swift in Sources */,
+				A3CB77CE24F1F00200B0B338 /* AlbumesCell.swift in Sources */,
 				A3CB779424F1D77C00B0B338 /* NetworkServiceImpl.swift in Sources */,
 				A3CB779924F1D77C00B0B338 /* NetworkProcessor.swift in Sources */,
 				A3CB77B224F1DCBB00B0B338 /* UserEndPoint.swift in Sources */,

@@ -51,7 +51,7 @@ class BaseView<Presenter: BasePresenter, Item: BaseItem>: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationItem.backBarButtonItem?.title = ""
         bindind()
     }

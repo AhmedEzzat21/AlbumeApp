@@ -11,6 +11,13 @@ import UIKit
 
 class UserView: BaseView<UserPresenter, BaseItem> {
     
+    @IBOutlet weak var albumesCollectionView: UICollectionView!{
+        didSet {
+            self.albumesCollectionView.register(UINib(nibName: String(describing: AlbumesCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: AlbumesCell.self))
+
+        }
+
+    }
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var UserAddressLbl: UILabel!
     
@@ -18,6 +25,7 @@ class UserView: BaseView<UserPresenter, BaseItem> {
         presenter = UserPresenter(router: RouterManager(self), userRepo: UserRepoImpl())
         presenter.userName.bind(to: userNameLbl)
         presenter.userAdress.bind(to: UserAddressLbl)
+        presenter.getUserInfo()
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -51,3 +59,34 @@ class UserView: BaseView<UserPresenter, BaseItem> {
     
     
 }
+
+extension UserView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    
+        return presenter.albumes.value.count
+    
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+            let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: AlbumesCell.self), for: indexPath))  as! AlbumesCell
+            cell.configure(result: presenter.albumes.value[indexPath.row], index: indexPath.row)
+            return cell
+        
+        
+        
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+ 
+            return CGSize( width: (collectionView.frame.width), height: 120 )
+
+        
+    }
+    
+}
+
+
