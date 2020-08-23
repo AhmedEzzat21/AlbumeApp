@@ -16,7 +16,7 @@ class UserPresenter: BasePresenter {
     let userAdress: Observable<String?> = Observable("")
 
 
-    var albumes: Dynamic<[AlbumModels]> = Dynamic([])
+    var albumes: Dynamic<[AlbumModel]> = Dynamic([])
     let albumeTitle: Observable<String?> = Observable("")
     let albumeId: Observable<String?> = Observable("")
     let userRepo: UserRepo
