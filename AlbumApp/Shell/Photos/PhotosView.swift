@@ -29,6 +29,8 @@ class PhotosView: BaseView<PhotosPresenter, albumeItem> {
                     self.photosCollectionView.reloadData()
 
         }
+        self.navigationItem.title = self.presenter.albumeTitle.value
+
       self.SearchTab.endEditing(true)
 
         presenter.getPhotos()
@@ -37,8 +39,8 @@ class PhotosView: BaseView<PhotosPresenter, albumeItem> {
         
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
-            self.navigationItem.title = presenter.albumeTitle.value
-            navigationController?.navigationBar.topItem?.title = "Profile"
+            navigationController?.navigationBar.topItem?.title = "Profile"e            self.navigationItem.backBarButtonItem?.title = "Profile"
+
             navigationController?.navigationItem.largeTitleDisplayMode = .automatic
             
             let attributes = [
