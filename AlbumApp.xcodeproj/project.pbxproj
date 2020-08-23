@@ -148,6 +148,15 @@
 			path = Item;
 			sourceTree = "<group>";
 		};
+		A3B50A7124F29BF5000E14B2 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */,
+				A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
 		A3CB775924F1D1F100B0B338 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +195,7 @@
 		A3CB777924F1D73D00B0B338 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A3B50A7124F29BF5000E14B2 /* Photos */,
 				A3CB77BD24F1E30500B0B338 /* User */,
 				A3CB77AA24F1D7BA00B0B338 /* Repo */,
 				A3CB77A924F1D7B100B0B338 /* EndPoint */,
@@ -279,11 +289,9 @@
 		A3CB77BD24F1E30500B0B338 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				A3CB77C224F1E39700B0B338 /* UserPresenter.swift */,
 				A3CB77BE24F1E37100B0B338 /* UserProcessor.swift */,
 				A3CB77C024F1E37E00B0B338 /* AlbumeProcessor.swift */,
-				A3CB77C424F1E3B800B0B338 /* PhotosProcessor.swift */,
-				A3CB77C224F1E39700B0B338 /* UserPresenter.swift */,
-				A3CB77C624F1E3CC00B0B338 /* PhotosPresenter.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
